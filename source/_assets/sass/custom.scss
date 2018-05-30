@@ -24,7 +24,13 @@
             .border-blue
             .border-solid
             .bg-white
-            .shadow-lg;
+            .shadow-md;
+            transition: box-shadow 0.25s, border 0.25s;
+            &:hover {
+                @apply
+                .border-l-8
+                .shadow-lg;
+            }
         }
     }
 
