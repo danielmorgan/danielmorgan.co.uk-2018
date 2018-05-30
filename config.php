@@ -6,14 +6,17 @@ return [
 
     'production' => false,
 
-    'collections' => [],
+    'collections' => [
+        'posts' => [
+            'path' => 'blog/{filename}',
+            'sort' => ['-date'],
+        ],
+    ],
 
     'cache_bust' => function ($page, $filePath) {
-        if ($page->production) {
-            return $filePath . '?v=' . $page->version;
-        }
-
-        return $filePath;
+        return $page->production
+            ? "{$filePath}?v={$page->version}"
+            : "{$filePath}";
     },
 
 ];
