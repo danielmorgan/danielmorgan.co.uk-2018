@@ -50,3 +50,37 @@
         }
     }
 }
+
+.MainNav {
+    li {
+        @apply .flex;
+    }
+}
+
+.MainNav__link {
+    @apply
+    .flex-1
+    .px-2
+    .-mx-2
+    .py-2
+    .mt-2
+    .font-semibold
+    .no-underline
+    .text-lg
+    .text-blue;
+    transition: box-shadow 0.25s;
+    &:hover {
+        @apply
+        bg-white
+        shadow;
+    }
+}
+
+.MainNav__link--active {
+    @apply
+    .cursor-default
+    .pointer-events-none
+    .text-blue-darkest
+    .bg-white
+    .shadow;
+}

@@ -727,6 +727,48 @@ button,
   }
 }
 
+.MainNav li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.MainNav__link {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding-left: .5rem;
+  padding-right: .5rem;
+  margin-left: -0.5rem;
+  margin-right: -0.5rem;
+  padding-top: .5rem;
+  padding-bottom: .5rem;
+  margin-top: .5rem;
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 1.125rem;
+  color: #3490dc;
+  -webkit-transition: -webkit-box-shadow .25s;
+  transition: -webkit-box-shadow .25s;
+  transition: box-shadow .25s;
+  transition: box-shadow .25s, -webkit-box-shadow .25s;
+}
+
+.MainNav__link:hover {
+  background-color: #fff;
+  -webkit-box-shadow: 0 2px 4px 0 rgba(0, 0, 100, .1);
+          box-shadow: 0 2px 4px 0 rgba(0, 0, 100, .1);
+}
+
+.MainNav__link--active {
+  cursor: default;
+  pointer-events: none;
+  color: #12283a;
+  background-color: #fff;
+  -webkit-box-shadow: 0 2px 4px 0 rgba(0, 0, 100, .1);
+          box-shadow: 0 2px 4px 0 rgba(0, 0, 100, .1);
+}
+
 .list-reset {
   list-style: none;
   padding: 0;
@@ -3824,6 +3866,31 @@ button,
 }
 
 .shadow-none {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.hover\:shadow:hover {
+  -webkit-box-shadow: 0 2px 4px 0 rgba(0, 0, 100, .1);
+          box-shadow: 0 2px 4px 0 rgba(0, 0, 100, .1);
+}
+
+.hover\:shadow-md:hover {
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 100, .12), 0 2px 4px 0 rgba(0, 0, 100, .08);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 100, .12), 0 2px 4px 0 rgba(0, 0, 100, .08);
+}
+
+.hover\:shadow-lg:hover {
+  -webkit-box-shadow: 0 15px 30px 0 rgba(0, 0, 100, .11), 0 5px 15px 0 rgba(0, 0, 100, .08);
+          box-shadow: 0 15px 30px 0 rgba(0, 0, 100, .11), 0 5px 15px 0 rgba(0, 0, 100, .08);
+}
+
+.hover\:shadow-inner:hover {
+  -webkit-box-shadow: inset 0 2px 4px 0 rgba(0, 0, 100, .06);
+          box-shadow: inset 0 2px 4px 0 rgba(0, 0, 100, .06);
+}
+
+.hover\:shadow-none:hover {
   -webkit-box-shadow: none;
           box-shadow: none;
 }
@@ -7898,6 +7965,31 @@ button,
             box-shadow: none;
   }
 
+  .sm\:hover\:shadow:hover {
+    -webkit-box-shadow: 0 2px 4px 0 rgba(0, 0, 100, .1);
+            box-shadow: 0 2px 4px 0 rgba(0, 0, 100, .1);
+  }
+
+  .sm\:hover\:shadow-md:hover {
+    -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 100, .12), 0 2px 4px 0 rgba(0, 0, 100, .08);
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 100, .12), 0 2px 4px 0 rgba(0, 0, 100, .08);
+  }
+
+  .sm\:hover\:shadow-lg:hover {
+    -webkit-box-shadow: 0 15px 30px 0 rgba(0, 0, 100, .11), 0 5px 15px 0 rgba(0, 0, 100, .08);
+            box-shadow: 0 15px 30px 0 rgba(0, 0, 100, .11), 0 5px 15px 0 rgba(0, 0, 100, .08);
+  }
+
+  .sm\:hover\:shadow-inner:hover {
+    -webkit-box-shadow: inset 0 2px 4px 0 rgba(0, 0, 100, .06);
+            box-shadow: inset 0 2px 4px 0 rgba(0, 0, 100, .06);
+  }
+
+  .sm\:hover\:shadow-none:hover {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+
   .sm\:text-left {
     text-align: left;
   }
@@ -11957,6 +12049,31 @@ button,
   }
 
   .md\:shadow-none {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+
+  .md\:hover\:shadow:hover {
+    -webkit-box-shadow: 0 2px 4px 0 rgba(0, 0, 100, .1);
+            box-shadow: 0 2px 4px 0 rgba(0, 0, 100, .1);
+  }
+
+  .md\:hover\:shadow-md:hover {
+    -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 100, .12), 0 2px 4px 0 rgba(0, 0, 100, .08);
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 100, .12), 0 2px 4px 0 rgba(0, 0, 100, .08);
+  }
+
+  .md\:hover\:shadow-lg:hover {
+    -webkit-box-shadow: 0 15px 30px 0 rgba(0, 0, 100, .11), 0 5px 15px 0 rgba(0, 0, 100, .08);
+            box-shadow: 0 15px 30px 0 rgba(0, 0, 100, .11), 0 5px 15px 0 rgba(0, 0, 100, .08);
+  }
+
+  .md\:hover\:shadow-inner:hover {
+    -webkit-box-shadow: inset 0 2px 4px 0 rgba(0, 0, 100, .06);
+            box-shadow: inset 0 2px 4px 0 rgba(0, 0, 100, .06);
+  }
+
+  .md\:hover\:shadow-none:hover {
     -webkit-box-shadow: none;
             box-shadow: none;
   }
@@ -16024,6 +16141,31 @@ button,
             box-shadow: none;
   }
 
+  .lg\:hover\:shadow:hover {
+    -webkit-box-shadow: 0 2px 4px 0 rgba(0, 0, 100, .1);
+            box-shadow: 0 2px 4px 0 rgba(0, 0, 100, .1);
+  }
+
+  .lg\:hover\:shadow-md:hover {
+    -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 100, .12), 0 2px 4px 0 rgba(0, 0, 100, .08);
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 100, .12), 0 2px 4px 0 rgba(0, 0, 100, .08);
+  }
+
+  .lg\:hover\:shadow-lg:hover {
+    -webkit-box-shadow: 0 15px 30px 0 rgba(0, 0, 100, .11), 0 5px 15px 0 rgba(0, 0, 100, .08);
+            box-shadow: 0 15px 30px 0 rgba(0, 0, 100, .11), 0 5px 15px 0 rgba(0, 0, 100, .08);
+  }
+
+  .lg\:hover\:shadow-inner:hover {
+    -webkit-box-shadow: inset 0 2px 4px 0 rgba(0, 0, 100, .06);
+            box-shadow: inset 0 2px 4px 0 rgba(0, 0, 100, .06);
+  }
+
+  .lg\:hover\:shadow-none:hover {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+
   .lg\:text-left {
     text-align: left;
   }
@@ -20083,6 +20225,31 @@ button,
   }
 
   .xl\:shadow-none {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+
+  .xl\:hover\:shadow:hover {
+    -webkit-box-shadow: 0 2px 4px 0 rgba(0, 0, 100, .1);
+            box-shadow: 0 2px 4px 0 rgba(0, 0, 100, .1);
+  }
+
+  .xl\:hover\:shadow-md:hover {
+    -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 100, .12), 0 2px 4px 0 rgba(0, 0, 100, .08);
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 100, .12), 0 2px 4px 0 rgba(0, 0, 100, .08);
+  }
+
+  .xl\:hover\:shadow-lg:hover {
+    -webkit-box-shadow: 0 15px 30px 0 rgba(0, 0, 100, .11), 0 5px 15px 0 rgba(0, 0, 100, .08);
+            box-shadow: 0 15px 30px 0 rgba(0, 0, 100, .11), 0 5px 15px 0 rgba(0, 0, 100, .08);
+  }
+
+  .xl\:hover\:shadow-inner:hover {
+    -webkit-box-shadow: inset 0 2px 4px 0 rgba(0, 0, 100, .06);
+            box-shadow: inset 0 2px 4px 0 rgba(0, 0, 100, .06);
+  }
+
+  .xl\:hover\:shadow-none:hover {
     -webkit-box-shadow: none;
             box-shadow: none;
   }

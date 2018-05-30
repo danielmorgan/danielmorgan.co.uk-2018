@@ -5,7 +5,7 @@
         <div class="mt-4 md:mt-8 xl:mt-16">
             @include('_partials.sidebar')
         </div>
-        <div class="max-w-md mt-4 md:mt-8 md:ml-8 md:flex-1 xl:mt-16 xl:ml-16">
+        <div class="max-w-md mt-8 md:ml-8 md:flex-1 xl:mt-16 xl:ml-16">
             <div class="Content">
                 <h3 class="text-xl font-semibold text-blue-darkest">About me...</h3>
                 <p class="mt-4 text-blue-darkest leading-normal">
