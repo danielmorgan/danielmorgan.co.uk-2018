@@ -7,7 +7,7 @@
 <nav class="mt-4 md:mt-8">
     <ul class="MainNav list-reset">
         <li>
-            <a href="/" class="MainNav__link {{ $page->selected('about') }}" aria-disabled>
+            <a href="/" class="MainNav__link {{ $page->selected('about') }}">
                 About me
             </a>
         </li>
