@@ -30,6 +30,15 @@ return [
             $markdown .= "[![]($url)]($url)";
         }
         return $markdown;
-    }
+    },
+
+    'selected' => function ($page, $section) {
+        $homePage = 'about';
+        $className = 'MainNav__link--active';
+        if ($page->getPath() === '' && $section === $homePage) {
+            return $className;
+        }
+        return str_contains($page->getPath(), $section) ? $className : '';
+    },
 
 ];

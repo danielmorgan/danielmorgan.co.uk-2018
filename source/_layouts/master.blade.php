@@ -12,7 +12,14 @@
         <title>@yield('title', 'Daniel Morgan - Interactive developer')</title>
     </head>
     <body class="antialiased font-sans bg-blue-lightest">
-        @yield('body')
+        <div class="md:flex px-4 md:px-8 xl:px-16">
+            <div class="mt-4 md:mt-8 xl:mt-16">
+                @include('_partials.sidebar')
+            </div>
+            <div class="max-w-md mt-8 md:ml-8 md:flex-1 xl:mt-16 xl:ml-16">
+                @yield('body')
+            </div>
+        </div>
 
         <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600" rel="stylesheet">
     </body>
