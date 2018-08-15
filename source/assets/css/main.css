@@ -670,6 +670,36 @@ button,
   color: #1c3d5a;
 }
 
+.Content p {
+  margin-top: 1rem;
+}
+
+.Content h1,
+.Content h2,
+.Content h3,
+.Content h4,
+.Content h5,
+.Content h6 {
+  margin-top: 2rem;
+}
+
+.Content iframe,
+.Content img,
+.Content pre {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  padding: .5rem;
+  width: 100%;
+  background-color: #fff;
+  color: #cc1f1a;
+  -webkit-box-shadow: 0 15px 30px 0 rgba(0, 0, 100, .11), 0 5px 15px 0 rgba(0, 0, 100, .08);
+          box-shadow: 0 15px 30px 0 rgba(0, 0, 100, .11), 0 5px 15px 0 rgba(0, 0, 100, .08);
+}
+
+.Content pre {
+  padding: 1rem;
+}
+
 .SkillsList {
   list-style: none;
   padding: 0;
@@ -765,6 +795,28 @@ button,
   background-color: #fff;
   -webkit-box-shadow: 0 2px 4px 0 rgba(0, 0, 100, .1);
           box-shadow: 0 2px 4px 0 rgba(0, 0, 100, .1);
+}
+
+.BodyWrapper {
+  max-width: 40rem;
+  margin-bottom: 2rem;
+}
+
+@media (min-width: 768px) {
+  .BodyWrapper {
+    margin-left: 2rem;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+  }
+}
+
+@media (min-width: 1200px) {
+  .BodyWrapper {
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    margin-left: 4rem;
+  }
 }
 
 .list-reset {

@@ -16,7 +16,7 @@
             <div class="mt-4 md:mt-8 xl:mt-16">
                 @include('_partials.sidebar')
             </div>
-            <div class="max-w-md mt-8 md:ml-8 md:flex-1 xl:mt-16 xl:ml-16">
+            <div class="BodyWrapper">
                 @yield('body')
             </div>
         </div>

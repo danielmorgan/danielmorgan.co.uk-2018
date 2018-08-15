@@ -1,84 +1,105 @@
 .Content {
-    a {
-        @apply .text-blue;
+  a {
+    @apply .text-blue;
 
-        &:hover {
-            @apply .text-blue-darker;
-        }
+    &:hover {
+      @apply .text-blue-darker;
     }
+  }
+
+  p {
+    @apply .mt-4;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply .mt-8;
+  }
+
+  iframe, img, pre {
+    @apply .my-8 .p-2 .w-full .bg-white .text-red-dark .shadow-lg;
+  }
+
+  pre {
+    @apply .p-4;
+  }
 }
 
 .SkillsList {
-    @apply .list-reset;
+  @apply .list-reset;
 
-    li {
-        @apply
-        .flex
-        .items-center
-        .mt-2;
-        @screen md {
-            @apply
-            .p-4
-            .mt-4
-            .border-l-4
-            .border-blue
-            .border-solid
-            .bg-white
-            .shadow-md;
-            transition: box-shadow 0.25s, border 0.25s;
-            &:hover {
-                @apply
-                .border-l-8
-                .shadow-lg;
-            }
-        }
+  li {
+    @apply .flex
+    .items-center
+    .mt-2;
+    @screen md {
+      @apply .p-4
+      .mt-4
+      .border-l-4
+      .border-blue
+      .border-solid
+      .bg-white
+      .shadow-md;
+      transition: box-shadow 0.25s, border 0.25s;
+      &:hover {
+        @apply .border-l-8
+        .shadow-lg;
+      }
     }
+  }
 
-    svg {
-        @apply .h-6;
-    }
+  svg {
+    @apply .h-6;
+  }
 
-    span {
-        @apply
-        .flex-1
-        .ml-2
-        .leading-none
-        .text-blue-darkest;
-        @screen md {
-            @apply
-            .ml-4;
-        }
+  span {
+    @apply .flex-1
+    .ml-2
+    .leading-none
+    .text-blue-darkest;
+    @screen md {
+      @apply .ml-4;
     }
+  }
 }
 
 .MainNav {
-    li {
-        @apply .flex;
-    }
+  li {
+    @apply .flex;
+  }
 }
 
 .MainNav__link {
-    @apply
-    .flex-1
-    .px-2
-    .-mx-2
-    .py-2
-    .mt-2
-    .font-semibold
-    .no-underline
-    .text-lg
-    .text-blue;
-    transition: box-shadow 0.25s;
-    &:hover {
-        @apply
-        bg-white
-        shadow;
-    }
+  @apply .flex-1
+  .px-2
+  .-mx-2
+  .py-2
+  .mt-2
+  .font-semibold
+  .no-underline
+  .text-lg
+  .text-blue;
+  transition: box-shadow 0.25s;
+  &:hover {
+    @apply bg-white
+    shadow;
+  }
 }
 
 .MainNav__link--active {
-    @apply
-    .text-blue-darkest
-    .bg-white
-    .shadow;
+  @apply .text-blue-darkest
+  .bg-white
+  .shadow;
+}
+
+.BodyWrapper {
+  @apply .max-w-md
+  .mb-8;
+  @screen md {
+    @apply .ml-8
+    .flex-1;
+  }
+  @screen xl {
+    @apply .my-16
+    .ml-16;
+  }
 }
